@@ -13,7 +13,7 @@ router.get("/v1/findall", async (req, res) => {
         console.log("Usuários encontrados com sucesso!")
         res.json(users)
     } catch (error) {
-        console.log(`Falha ao buscar pelos usuários ${error}`)
+        console.log(`Falha ao buscar pelos usuários: ${error}`)
         res.json(error)
     }
 })
